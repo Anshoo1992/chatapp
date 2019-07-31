@@ -1,0 +1,32 @@
+<!-- <div class="conversation_item flex">
+  <div class="conversation_img">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1iIU81Vuy0tiOAeQ1jFOsPMSpH9pFxYijqkvtNnCQn6mzon8OIA" />
+  </div>
+  <div class="user_conversation_div margin-auto">
+    <div class="user_name textOverflow fontweight500">
+      Peter Malion
+      <span class="conversation_time">Yesterday</span>
+    </div>
+    <div class="user_status textOverflow">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dddddddd
+    </div>
+  </div>
+</div> -->
+
+<div *ngFor="let item of userConversationList">
+  <div class="conversation_item flex">
+    <div class="conversation_img">
+      <img [src]="item.userDetail.imgUrl" />
+    </div>
+    <div class="user_conversation_div margin-auto">
+      <div class="user_name textOverflow fontweight500" *ngIf="item.userDetail.name">
+        <span >{{item.userDetails.name}}</span>
+        <span class="conversation_time">Yesterday</span>
+      </div>
+      <div class="user_status textOverflow">
+       {{item.conversation.message}}
+      </div>
+    </div>
+  </div>
+</div>

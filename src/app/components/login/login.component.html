@@ -1,0 +1,24 @@
+<div class="login-container">
+  <div class="login-div">
+    <div class="login-title-div">
+      <h2>WELCOME</h2>
+      <mat-icon aria-label="Example icon-button with a heart icon">chat</mat-icon>
+    </div>
+    <div class="example-container">
+      <mat-form-field>
+        <input matInput placeholder="Email" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Password" [formControl]="password" required>
+        <mat-icon matSuffix class="password-eye">remove_red_eye</mat-icon>
+      </mat-form-field>
+      <button mat-raised-button class="submitBtn" (click)="dologin()">Login</button>
+    </div>
+    <div class="login-subdiv">
+      <span>Don’t have an account?</span>
+      <a routerLink="/register"> Sign up</a>
+    </div>
+  </div>
+
+</div>

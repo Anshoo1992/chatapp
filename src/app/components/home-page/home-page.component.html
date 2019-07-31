@@ -1,0 +1,72 @@
+<div class='container-fluid home padding0'>
+  <div class="row home-container no-gutters">
+    <div class='padding0 widthsm'>
+      <div class="home-menu">
+        <ul>
+          <li>
+            <mat-icon matSuffix class="">face</mat-icon>
+          </li>
+          <li>
+            <mat-icon matSuffix class="">message</mat-icon>
+          </li>
+          <li>
+            <mat-icon matSuffix class="" [routerLink]="['/contacts']">account_box</mat-icon>
+          </li>
+          <li>
+            <mat-icon matSuffix class="">email</mat-icon>
+          </li>
+          <li>
+            <mat-icon matSuffix class="">description</mat-icon>
+          </li>
+          <li>
+            <mat-icon matSuffix class="">settings</mat-icon>
+          </li>
+          <li>
+            <mat-icon matSuffix class="">receipt</mat-icon>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='widthmd conversation'>
+      <div class="search">
+        <div class="search-div flex">
+          <input type="text" placeholder="search" [(ngModel)]="value">
+          <button mat-button *ngIf="!value" matSuffix mat-icon-button aria-label="Clear">
+            <mat-icon>search</mat-icon>
+          </button>
+          <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </div>
+        <div>
+          <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="addNewConversation()">
+            <mat-icon>add</mat-icon>
+          </button>
+        </div>
+
+      </div>
+      <div class="conversation_list">
+        <div *ngIf="conversationList.length>0">
+          <app-list-item [conversationList]="conversationList"></app-list-item>
+        </div>
+      </div>
+    </div>
+
+    <div class='widthlg padding0 conversation-open'>
+      <div *ngIf="!activeConversation" class="flex default-screen">
+        <div class="chat-demo">
+          <img src="https://cdn.dribbble.com/users/4908/screenshots/2657565/livechat-animation.gif" width="400"
+            alt="chat-demo">
+        </div>
+        <h5>Have private conversations</h5>
+        <p>Sometimes you just want to chat or video call privately one-on-one or with a group.</p>
+      </div>
+      <div *ngIf="activeConversation">
+        <app-conversation [activeConversation]="activeConversation"></app-conversation>
+      </div>
+    </div>
+
+  </div>
+
+</div>

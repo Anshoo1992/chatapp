@@ -1,1 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('./assets/angular-material.css');
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+.flex{
+  display: flex;
+}
+.textOverflow{
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fontweight500{
+  font-weight: 500;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.padding0{
+  padding-left:0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  padding-top:0 !important;
+  }
+.margin-auto{
+  margin: auto;
+}
+ .login-container{
+    width: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #f2f2f2;
+    height: 100vh;
+}
+
+.login-div{
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.login-title-div{
+    text-align: center;
+    font-size: 30px;
+    font-size: 30px;
+    color: #333333;
+    line-height: 1.2;
+  }
+  .example-container > * {
+    width: 100%;
+    margin-bottom: 37px;
+  }
+  .example-container button{
+    background-color:#2196F3;
+    color:#fff;
+  }
+  .full-width{
+    width: 100%;
+}
+.submitBtn{
+    background-color:#2196F3;
+    color:#fff;
+}

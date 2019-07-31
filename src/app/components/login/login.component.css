@@ -1,0 +1,65 @@
+.login-container{
+    width: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #f2f2f2;
+    height: 100vh;
+}
+
+.login-div{
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example-container > * {
+    width: 100%;
+    margin-bottom: 37px;
+  }
+  
+  .login-title-div{
+    text-align: center;
+    font-size: 30px;
+    font-size: 30px;
+    color: #333333;
+    line-height: 1.2;
+  }
+  .login-title-div h2{padding-bottom:25px; }
+  .login-title-div .mat-icon{
+      font-size: 50px;
+  }
+  .login-subdiv{
+      text-align: center;
+      padding-top:115px; 
+  }
+  .login-subdiv span , .login-subdiv a{
+      font-size: 13px;
+      color: #666666;
+      text-decoration:none;
+  }
+  .login-subdiv a:hover{
+      color:#2196F3;
+      font-weight: bold;
+  }
+  .password-eye{
+    font-size: 14px;
+    color: #aaa;
+  }

@@ -1,0 +1,27 @@
+<div class="login-container">
+  <div class="login-div">
+    <div class="login-title-div">
+      <h2>Your Details</h2>
+      <mat-icon aria-label="Example icon-button with a heart icon">chat</mat-icon>
+    </div>
+    <form [formGroup]="userDetailsForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <mat-form-field class="full-width">
+          <input matInput type="text" placeholder="First Name" formControlName="firstName" required>
+          <mat-error *ngFor="let validation of account_validation_messages.firstName">
+            <mat-error class="error-message"
+              *ngIf="userDetailsForm.get('firstName').hasError(validation.type) && (userDetailsForm.get('firstName').dirty || userDetailsForm.get('firstName').touched)">
+              {{validation.message}}</mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-form-field class="full-width">
+          <input matInput type="text" placeholder="Last Name" formControlName="lastName">
+        </mat-form-field>
+      </div>
+      <button mat-raised-button class="full-width submitBtn">Save</button>
+      <a>Skip</a>
+    </form>
+  </div>
+</div>
