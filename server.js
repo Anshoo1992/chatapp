@@ -6,8 +6,7 @@ const cors=require('cors');
 const bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var mongoOptions = { db: { safe: true ,useMongoClient: true,useNewUrlParser: true }};
-var dbUrl=process.env.MONGODB_URI || "mongodb://anshoo:anshoo123@ds215563.mlab.com:15563/angular-chat-app";//"mongodb://anshoo:anshoo@ds141078.mlab.com:41078/toapazdb"
-
+var dbUrl=process.env.MONGODB_URI || 'xyz' //url mongo mlab url
 
 
 const app = express();
