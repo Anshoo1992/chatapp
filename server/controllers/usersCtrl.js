@@ -133,8 +133,8 @@ class UserCtrl {
         });
 
         var mailOptions = {
-            from: 'anshoopandey.akp@gmail.com',
-            to: 'dharmendra.mishra1989@gmail.com',
+            from: 'xxx.xx@gmail.com',
+            to: 'zzz.zzz@gmail.com',
             subject: 'Sending Email using Node.js',
             text: 'That was easy!'
         };
