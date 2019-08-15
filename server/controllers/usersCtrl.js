@@ -127,8 +127,8 @@ class UserCtrl {
         var transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'anshoopandey.akp@gmail.com',
-                pass: 'may@nshoo1'
+                user: 'xxx.xxx@gmail.com',
+                pass: 'xxxxx'
             }
         });
 
